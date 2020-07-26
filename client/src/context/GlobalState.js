@@ -42,7 +42,7 @@ const GlobalContextProvider = ({ children }) => {
 
     const getTransactions = async () => {
         try {
-            const res = await axios.get("/api/v1/transactions");
+            const res = await axios.get("http://localhost:5000/api/v1/transactions");
 
             dispatch({
                 type: "GET_TRANSACTIONS",
